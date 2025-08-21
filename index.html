@@ -52,15 +52,15 @@
       margin: 0 auto;
       border-radius: 10px;
     }
-    /* Trash fall container */
+
+    /* Trash fall animation */
     .trash-fall {
-      display: none; /* starts hidden */
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100vh;
-      pointer-events: none; /* allow clicks through */
+      pointer-events: none;
       overflow: hidden;
       z-index: 9999;
     }
@@ -83,29 +83,11 @@
         opacity: 0;
       }
     }
-    /* Toggle button style */
-    #toggleTrashBtn {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      border: 2px solid #bada55;
-      background-color: #fff;
-      color: #4a7300;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    #toggleTrashBtn:hover {
-      background-color: #bada55;
-      color: white;
-    }
   </style>
 </head>
 <body>
 
   <h1>🌟 Welcome to the Official Page of Kachra Seth 🌟</h1>
-
-  <button id="toggleTrashBtn">🚛 Turn Trash Animation ON</button>
 
   <h2 class="highlight">AKA: Varsha the "Kachra Seth"</h2>
   <img src="IMG-20250821-WA0031.jpg" alt="Kachra Seth" class="profile">
@@ -117,7 +99,6 @@
       <li>🧼 Owns 5 types of broken combs – all “still useful.”</li>
       <li>🕶️ Once tried to recycle her own shadow.</li>
       <li>🧽 Has a PhD in kachra Collection.</li>
-      <li>🗞️ </li>
     </ul>
   </div>
 
@@ -156,7 +137,7 @@
     This site is certified 100% trashy.
   </footer>
 
-  <!-- Trash animation container -->
+  <!-- Falling trash animation -->
   <div class="trash-fall">
     <div class="trash-item" style="left: 5%; animation-duration: 7s; animation-delay: 0s;">🗑️</div>
     <div class="trash-item" style="left: 15%; animation-duration: 5s; animation-delay: 2s;">🥤</div>
@@ -172,26 +153,7 @@
     <div class="trash-item" style="left: 30%; animation-duration: 8.3s; animation-delay: 2.1s;">🗞️</div>
     <div class="trash-item" style="left: 40%; animation-duration: 6.4s; animation-delay: 0.8s;">🧻</div>
     <div class="trash-item" style="left: 50%; animation-duration: 7.9s; animation-delay: 1.9s;">🍕</div>
-    <div class="trash-item" style="left: 60%; animation-duration: 5.8s; animation-delay: 2.7s;">🧽</div>
   </div>
-
-  <script>
-    const toggleBtn = document.getElementById('toggleTrashBtn');
-    const trashFall = document.querySelector('.trash-fall');
-
-    let isTrashOn = false;
-
-    toggleBtn.addEventListener('click', () => {
-      isTrashOn = !isTrashOn;
-      if (isTrashOn) {
-        trashFall.style.display = 'block';
-        toggleBtn.textContent = '🚛 Turn Trash Animation OFF';
-      } else {
-        trashFall.style.display = 'none';
-        toggleBtn.textContent = '🚛 Turn Trash Animation ON';
-      }
-    });
-  </script>
 
 </body>
 </html>
