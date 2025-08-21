@@ -4,25 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kachra Seth - The Legend Lives On</title>
+
+  <!-- Comic Neue fallback for mobile (Comic Sans lookalike) -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
   <style>
     body {
       background-color: #fffbcc;
-      font-family: Comic Sans MS, cursive, sans-serif;
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
       text-align: center;
       padding: 30px;
       margin: 0;
       overflow-x: hidden;
     }
+
     img.profile {
       width: 250px;
       max-width: 90vw;
       border-radius: 50%;
       border: 5px dotted green;
     }
+
     .highlight {
       font-size: 1.5em;
       color: #bada55;
     }
+
     .funny-facts {
       background-color: #fff3f3;
       padding: 20px;
@@ -33,17 +40,20 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     footer {
       margin-top: 50px;
       font-size: 0.8em;
       color: #888;
     }
+
     .certificate {
       background-color: #e0ffe0;
       padding: 20px;
       margin-top: 30px;
       border-radius: 15px;
     }
+
     .certificate-box {
       border: 5px solid gold;
       padding: 20px;
@@ -64,6 +74,7 @@
       overflow: hidden;
       z-index: 9999;
     }
+
     .trash-item {
       position: absolute;
       top: -50px;
@@ -73,6 +84,7 @@
       animation-timing-function: linear;
       animation-iteration-count: infinite;
     }
+
     @keyframes fall {
       0% {
         transform: translateY(0) rotate(0deg);
@@ -85,10 +97,10 @@
     }
   </style>
 </head>
+
 <body>
 
   <h1>🌟 Welcome to the Official Page of Kachra Seth 🌟</h1>
-
   <h2 class="highlight">AKA: Varsha the "Kachra Seth"</h2>
   <img src="IMG-20250821-WA0031.jpg" alt="Kachra Seth" class="profile">
   <p>Preserving garbage with pride since... always.</p>
